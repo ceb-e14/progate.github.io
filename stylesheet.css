@@ -15,22 +15,22 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-image: url(sw.png);
   background-size: cover;
   color: white;
   text-align: center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
+  opacity: 0.9;
   font-size: 45px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
 .top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 .btn-wrapper {
@@ -45,13 +45,13 @@ a {
   background-color: #239b76;
 }
 
-.facebook {
-  background-color: #3b5998;
+.jelajahi {
+  background-color: #239b76;
   margin-right: 10px;
 }
 
-.twitter {
-  background-color: #55acee;
+.tentang {
+  background-color: #239b76;
 }
 
 .btn {
@@ -92,7 +92,6 @@ header {
 
 .header-right {
   float: right;
-  background-color: rgba(255, 255, 255, 0.3);
   transition: all 0.5s;
 }
 
@@ -100,17 +99,25 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.header-right a {
+.login {
   line-height: 65px;
   padding: 0 25px;
   color: white;
   display: block;
+  float: left;
+}
+
+.daftar {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
 }
 
 .lesson-wrapper {
   height: 500px;
   padding-bottom: 80px;
-  background-color: #f7f7f7;
   text-align: center;
 }
 
@@ -131,6 +138,11 @@ header {
 
 .lesson-icon {
   position: relative;
+  opacity: 0.8;
+}
+
+.lesson-icon:hover{
+  opacity: 1;
 }
 
 .lesson-icon p {
@@ -148,14 +160,17 @@ header {
   color: #b3aeb5;
 }
 
-.heading h3 {
-  font-weight: normal;
+.detail {
+  padding: 5px 10px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+.detail:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 .message {
@@ -163,12 +178,6 @@ header {
   background-color: #5dca88;
   cursor: pointer;
   box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
 }
 
 footer img {
