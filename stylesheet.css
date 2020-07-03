@@ -8,6 +8,7 @@ a {
 }
 
 .container {
+  flex: auto;
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
@@ -95,7 +96,16 @@ header {
   transition: all 0.5s;
 }
 
-.header-right:hover {
+.header-right a{
+  display: flex;
+  flex: auto;
+}
+
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.daftar:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -122,9 +132,11 @@ header {
 }
 
 .heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  border-bottom: 2px solid #dee7ec;
+  padding-top: 30px;
+  padding-bottom: 15px;
   color: #5f5d60;
+  margin-bottom: 50px;
 }
 
 .heading h2 {
@@ -134,11 +146,14 @@ header {
 .lesson {
   float: left;
   width: 25%;
+  flex-wrap: wrap;
 }
 
 .lesson-icon {
   position: relative;
   opacity: 0.8;
+  display: box;
+  flex: auto;
 }
 
 .lesson-icon:hover{
@@ -180,15 +195,45 @@ header {
   box-shadow: 0 7px #1a7940;
 }
 
-footer img {
-  width: 125px;
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.footer-logo {
+  float: left;
+  font-size: 32px;
 }
 
-footer {
-  padding-top: 30px;
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 960px){
+  .header{
+    position: inherit;
+  }
+
+  .lesson-wrapper{
+    width: 80%;
+    margin: 25px auto;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .header{
+    position: inherit;
+  }
+
+  .lesson-wrapper{
+    width: 60%;
+    margin: 15px auto;
+  }
 }
